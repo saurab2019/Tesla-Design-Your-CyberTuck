@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;700&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="./Images/tesla_favicon2.png">
+    <title>Design Your Cybertruck</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="logo"><img src="./Images/tesla_logo4.png" alt="TESLA"></div>
+        <h2 class="country">US</h2>
+    </section>
+    <section class="main">
+        <section class="equipment">
+            <div class="equipment_box">
+                <div class="specs">
+                    <div class="range">
+                        <h3><span>250+</span> MI</h3>
+                        <h4>RANGE (EPA EST.)</h4>
+                    </div>
+                    <div class="capacity">
+                        <h3><span>7,500+</span> LBS</h3>
+                        <h4>TOWING CAPACTY</h4>
+                    </div>
+                    <div class="speed">
+                        <h3><span><i class="fas fa-less-than"></i> 6.5</span> S</h3>
+                        <h4>0-60 MPH</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="design">
+            <h2>PREORDER CYBERTRUCK</h2>
+            <div id="content0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="item">
+                    <h4>SELECT MODEL</h4>
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">SELECT MODEL</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li id="truck1" data-bs-dismiss="modal"> MODAL X1</li>
+                                <li id="truck2" data-bs-dismiss="modal"> MODAL X2</li>
+                                <li id="truck3" data-bs-dismiss="modal">MODAL Y1</li>
+                                <li id="truck4" data-bs-dismiss="modal">MODAL Y2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content1">
+                <div class="item">
+                    <h4>SINGLE MOTOR RWD</h4>
+                    <h4> $39,900</h4>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div id="content2">
+                <div class="item">
+                    <h4>DUAL MOTOR AWD</h4>
+                    <h4> $49,900</h4>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div id="content3">
+                <div class="item">
+                    <h4>TRI MOTOR AWD</h4>
+                    <h4> $69,900</h4>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div id="content4">
+                <div class="item">
+                    <h4 id="self"><i class="fas fa-plus"></i> FULL SELF-DRIVING </h4>
+                    <h4>$10,600</h4>
+                </div>
+                <div class="line"></div>
+                <p>Selecting Full-Self Driving today will secure your price as it increases in the future.<span
+                        id="learn_more" data-bs-toggle="modal" data-bs-target="#exampleModal1"> Learn more</span>
+                </p>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>The currently enabled features require active driver supervision and do not make the
+                                vehicle autonomous. The activation and use of these features are dependent on achieving
+                                reliability far in excess of human drivers as demonstrated by billions of miles of
+                                experience, as well as regulatory approval, which may take longer in some jurisdictions.
+                                As these self-driving features evolve, your car will be continuously upgraded through
+                                over-the-air software updates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="due">
+                <div class="due_prices">
+                    <h4>DUE TODAY</h4>
+                    <h4>$150</h4>
+                </div>
+                <p>
+                    Fully refundable. You will be able to complete your configuration as production nears in late 2021.
+                    Tri
+                    Motor AWD production is expected in late 2021.
+                    Specs displayed are US values
+                </p>
+            </div>
+            <button class="buy">
+                <h3> BUY NOW</h3>
+            </button>
+            <form action="" class="purchase">
+                <h2 id="account_details">ENTER ACCOUNT DETAILS</h2>
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="lname">
+                <label for="mail">EMAIL ADDRESS</label>
+                <input type="email" id="mail" name="email" required><br>
+                <label for="ph_number">PHONE NUMBER</label>
+                <input type="number" id="ph_number" name="ph_number" required><br>
+                <h2>PAYMENT</h2>
+                <h2>CARD</h2>
+                <label for="C_name">NAME ON CARD</label>
+                <input type="text" id="C_name" name="cardHolderName" required><br>
+                <label for="exp_month">EXPIRATION MONTH</label>
+                <input type="number" id="exp_month" name="exp_month" min="1" max="12" required><br>
+                <label for="exp_year">EXPIRATION YEAR</label>
+                <input type="number" id="exp_year" name="exp_year" min="1000" required><br>
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" required><br>
+                <label for="bill_zip_code">BILLING ZIP CODE</label>
+                <input type="number" id="bill_zip_code" name="bill_zip_code" required><br>
+                <p>I allow Tesla to save my payment instrument information for future transactions pursuant to the <a
+                        href="https://www.tesla.com/about/legal#payment-terms" target="_blank" id="payment_terms">
+                        Payment Terms for Services</a></p>
+                <div class="due_prices">
+                    <h4>DUE TODAY</h4>
+                    <h4>$150</h4>
+                </div>
+                <input type="submit" id="book_order" value="PLACE ORDER">
+                <p>By clicking "Place Order" I agree to the Cybertruck Pre-Order Agreement, Supercharger Fair Use
+                    Policy, the Customer Privacy Agreement, and consent to be contacted at the number provided with more
+                    information or offers about Tesla products. I understand these calls or texts may use automated
+                    dialing or pre-recorded messages. I understand my consent to be contacted is not a condition of
+                    purchase.</p>
+            </form>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

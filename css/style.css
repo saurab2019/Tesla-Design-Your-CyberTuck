@@ -1,0 +1,383 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    /* background-color: black; */
+}
+body{
+    background-color: black;
+}
+h4,h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+a{
+    color: white;
+}
+
+.header{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding : .5rem 1rem;
+    padding-left: 2rem;
+}
+.header .logo{
+    /* border: 2px solid green; */
+    display: inline-block;
+     align-self: center; 
+}
+.header .logo img {
+    height: 45px;
+}
+.header .country{
+    /* border: 2px solid blue; */
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    padding: 1rem 0rem;
+}
+.main{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.main img{
+    width: 100%;
+    height: auto;
+}
+.main .equipment{
+    position: relative;
+    width: 65%;
+}
+.main .equipment .equipment_box{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    padding: 2rem 2rem;
+    align-items: center;
+    bottom : 8%;
+}
+.main .equipment .specs{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.main .equipment .specs{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.main .equipment .specs > div {
+    text-align: center;  
+}
+.main .equipment .specs > div h3{
+    font-size: 1.1rem;
+    padding: .5rem .5rem;
+}
+.main .equipment .specs > div h3 span{
+    font-size: 1.5rem;
+    text-shadow: .5px .5px 1px white;
+    text-shadow: -.5px -.5px 2px white;
+}
+.main .equipment .specs > div h4{
+    font-size: .9rem;
+}
+.main .design{
+    width: 35%;
+    height: 85.5vh;
+    padding : 3rem 2rem;
+    overflow-y: scroll;
+}
+.main .design > h2{
+    font-size: 1.5rem;
+    padding : 1rem 0rem;
+}
+#content1 .item h4{
+    color: white;
+}
+#content1 .line{
+    color: white;
+    box-shadow: 1px 1px 3px white,-1px -1px 3px white;
+    border-color: white;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.line{
+    border:1px solid #a5a5a5;
+}
+.item > h4{
+    color: #a5a5a5;
+}
+.item:hover{
+    cursor: pointer;
+}
+/* Modal */
+.modal-content{
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px white, -2px -2px 4px white;
+}
+#exampleModal .modal-content .modal-header h5{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#exampleModal .modal-content .modal-body ul{
+    padding-right: 2rem;
+}
+#exampleModal .modal-content .modal-body li{
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    border-bottom: 2px solid #a5a5a5;
+    padding: .5rem .5rem;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
+#exampleModal .modal-content .modal-body li:hover{
+    color: white;
+    cursor: pointer;
+    border-bottom:2px solid white;
+}
+
+
+#content4{
+    margin:2rem 0;
+}
+#content4 .line{
+    margin-bottom:.5rem;
+}
+#content4 p{
+    font-size:  .9rem;
+    color: #a5a5a5;
+}
+
+#content4 .item h4{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: #a5a5a5;
+    /* justify-content: space-between; */
+}
+#content4 .item h4 i{
+    font-size: 0.7rem;
+    padding-right: .8rem;
+    color: #a5a5a5;
+}
+#learn_more{
+    text-decoration: underline;
+    color: #a5a5a5;
+}
+#learn_more:hover{
+    cursor: pointer;
+    color: white;
+}
+#exampleModal1 {
+    padding: 1.5rem 1.5rem;
+}
+#exampleModal1 .modal-content .modal-header{
+    border-bottom: none;
+}
+#exampleModal1 .modal-content .modal-body{
+    padding :1rem 2rem;
+}
+#exampleModal1 .modal-content .modal-body p{
+    text-align: justify;
+}
+#due{
+    margin: 1rem 0rem;
+}
+#due .due_prices{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+#due .due_prices h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#due p{
+    font-size: .9rem;
+    color: #a5a5a5;
+}
+.design .buy{
+    width:100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin:1rem 0;
+    padding:.5rem .5rem;
+    background: none;
+    border: 3.5px solid white;
+}
+.buy:hover{
+    color: black;
+    background-color: #bebebe;
+}
+.buy:focus{
+    outline: none;
+}
+.buy h3{
+    font-size: 1.1rem;
+    text-align: center;
+    
+}
+.buy:hover{
+    cursor: pointer;
+}
+.purchase{
+    display: flex;
+    flex-direction: column;
+}
+.purchase #account_details{
+    margin: 1rem 1rem;
+}
+.purchase h2{
+    text-align: center;
+    padding: .5rem .5rem;
+}
+.purchase label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.purchase input{
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+    background: none;
+    border: 2px solid white;
+    margin: .5rem 0;
+}
+.purchase input:focus{
+    border: 3px solid white;
+    outline: none;
+}
+.purchase p{
+    font-size: .9rem;
+    color: #a5a5a5;
+    text-align: justify;
+}
+.purchase .due_prices{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+.purchase .due_prices h4{
+    font-size: 1.5rem;
+}
+.purchase input[type = submit]{
+    background-color: #a5a5a5;
+    color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+.purchase input[value = "PLACE ORDER"]{
+    font-weight: bold;
+}
+#payment_terms{
+    text-decoration: none;
+    font-weight: bold;
+}
+#payment_terms:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 945px){
+    .main{
+        flex-direction: column;
+        background-image: none;
+    }
+    .main h2{
+        text-align: center;
+    }
+    .main .equipment{
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+    .main .design{
+        width: 100%;
+        overflow: none;
+        height: auto;
+        background-color: black;
+        border-color: none;
+    }
+    .main .equipment .equipment_box{
+        width: 100%;
+        padding: 2rem 2rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 662px){
+    
+    .main .equipment .equipment_box{
+        display: flex;
+        width: 100%;
+        position: static;
+        padding: 1rem 1rem;
+        align-items: center;
+    }
+    .main .equipment .specs{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .header .logo img {
+        height: 40px;
+        width: 150px;
+    }
+    .main{
+        flex-direction: column;
+        background-image: none;
+        
+    }
+    .main .equipment{
+        width: 100%;
+    }
+    .main .design{
+        width: 100%;
+        padding-top : 1rem ;
+    }
+    .main .equipment .equipment_box{
+        padding: 2rem .5rem;
+    }
+    .main .equipment .specs{
+        flex-direction: column;
+    }
+    .main .equipment .specs > div{
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 350px){
+    .item h4{
+        font-size: .8rem;
+    }
+    #content4 .item h4{
+        font-size: .8rem;
+    }
+}
+
+
