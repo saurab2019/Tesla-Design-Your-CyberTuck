@@ -170,12 +170,12 @@ var flag1 = 0;
 var isbig = 1;
 $(document).ready(function () {
     if ($(window).width() >= 955) {
-        $(".main").css({ "background": "black url(../Images/cybertruck1.png)", "background-size": "calc(150vw - 435px)", "background-position": "calc(20px - 25vw) 50%", "background-repeat": "no-repeat" });
+        $(".main").css({ "background": "black url(./Images/cybertruck1.png)", "background-size": "calc(150vw - 435px)", "background-position": "calc(20px - 25vw) 50%", "background-repeat": "no-repeat" });
         flag1 = 1;
     }
     else {
         $(".main").css({ "background-image": "none" });
-        $(".main .equipment").before('<img id ="image" src = "../Images/cybertruck1.png" alt="CyberTruck">');
+        $(".main .equipment").before('<img id ="image" src = "./Images/cybertruck1.png" alt="CyberTruck">');
         flag = 1;
         isbig = 0;
     }
@@ -187,21 +187,21 @@ $(window).resize(function () {
                 $(".main img").remove();
             }
             if (image == 1) {
-                $(".main").css({ "background": "black url(../Images/cybertruck1.png)", "background-size": "calc(150vw - 435px)", "background-position": "calc(20px - 25vw) 50%", "background-repeat": "no-repeat" });
+                $(".main").css({ "background": "black url(./Images/cybertruck1.png)", "background-size": "calc(150vw - 435px)", "background-position": "calc(20px - 25vw) 50%", "background-repeat": "no-repeat" });
             }
             else if (truck1 == 1) {
-                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck2.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
+                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck2.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
 
             }
             else if (truck2 == 1) {
-                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck5.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
+                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck5.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
 
             }
             else if (truck3 == 1) {
-                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck6.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
+                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck6.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
             }
             else {
-                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck7.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
+                $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck7.jpg)", "background-size": "cover", "background-blend-mode": "darken", "background-position": "center" });
             }
             flag1 = 1;
             flag = 0;
@@ -212,20 +212,20 @@ $(window).resize(function () {
                 console.log("hi");
                 $(".main").css({ "background-image": "none" });
                 if (image == 1) {
-                    $(".main .equipment").before('<img id ="image" src = "../Images/cybertruck1.png" alt="CyberTruck">');
+                    $(".main .equipment").before('<img id ="image" src = "./Images/cybertruck1.png" alt="CyberTruck">');
                 }
                 else if (truck1 == 1) {
-                    $(".main .equipment").before('<img id ="image" src = "../Images/cybertruck2.jpg" alt="CyberTruck">');
+                    $(".main .equipment").before('<img id ="image" src = "./Images/cybertruck2.jpg" alt="CyberTruck">');
         
                 }
                 else if (truck2 == 1) {
-                    $(".main .equipment").before('<img id ="image" src = "../Images/cybertruck5.jpg" alt="CyberTruck">');
+                    $(".main .equipment").before('<img id ="image" src = "./Images/cybertruck5.jpg" alt="CyberTruck">');
                 }
                 else if (truck3 == 1) {
-                    $(".main .equipment").before('<img id ="image" src = "../Images/cybertruck6.jpg" alt="CyberTruck">');
+                    $(".main .equipment").before('<img id ="image" src = "./Images/cybertruck6.jpg" alt="CyberTruck">');
                 }
                 else {
-                    $(".main .equipment").before('<img id ="image" src = "../Images/cybertruck7.jpg" alt="CyberTruck">');
+                    $(".main .equipment").before('<img id ="image" src = "./Images/cybertruck7.jpg" alt="CyberTruck">');
                 }
                 flag = 1;
                 flag1 = 0;
@@ -235,10 +235,10 @@ $(window).resize(function () {
 $(document).ready(function () {
     $("#truck1").click(function () {
         if (isbig == 1) {
-            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck2.jpg)", "background-size": "cover", "background-position": "center","background-blend-mode": "darken" });
+            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck2.jpg)", "background-size": "cover", "background-position": "center","background-blend-mode": "darken" });
         }
         else {
-            $(".main img").attr("src", "../Images/cybertruck2.jpg");
+            $(".main img").attr("src", "./Images/cybertruck2.jpg");
         }
         image = 0;
         truck1 = 1;
@@ -248,11 +248,11 @@ $(document).ready(function () {
     });
     $("#truck2").click(function () {
         if (isbig == 1) {
-            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck5.jpg)", "background-size": "cover", "background-position": "center" });
+            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck5.jpg)", "background-size": "cover", "background-position": "center" });
             console.log(isbig);
         }
         else {
-            $(".main img").attr("src", "../Images/cybertruck5.jpg");
+            $(".main img").attr("src", "./Images/cybertruck5.jpg");
         }
         image = 0;
         truck1 = 0;
@@ -262,11 +262,11 @@ $(document).ready(function () {
     });
     $("#truck3").click(function () {
         if (isbig == 1) {
-            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck6.jpg)", "background-size": "cover", "background-position": "center","background-blend-mode": "darken" });
+            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck6.jpg)", "background-size": "cover", "background-position": "center","background-blend-mode": "darken" });
 
         }
         else {
-            $(".main img").attr("src", "../Images/cybertruck6.jpg");
+            $(".main img").attr("src", "./Images/cybertruck6.jpg");
         }
         image = 0;
         truck1 = 0;
@@ -276,11 +276,11 @@ $(document).ready(function () {
     });
     $("#truck4").click(function () {
         if (isbig == 1) {
-            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(../Images/cybertruck7.jpg)", "background-size": "cover", "background-position": "center","background-blend-mode": "darken" });
+            $(".main").css({ "background": "rgba(14, 14, 14, 0.438) url(./Images/cybertruck7.jpg)", "background-size": "cover", "background-position": "center","background-blend-mode": "darken" });
             console.log(isbig);
         }
         else {
-            $(".main img").attr("src", "../Images/cybertruck7.jpg");
+            $(".main img").attr("src", "./Images/cybertruck7.jpg");
         }
         image = 0;
         truck1 = 0;
